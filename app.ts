@@ -40,3 +40,13 @@ buttonElement.addEventListener('click',()=>{
 
 
 });
+
+const myPromise=new Promise<string>((resolve,reject)=>{
+    setTimeout(()=>{
+        resolve("It worked !")
+    },1000)
+
+})
+myPromise.then((result) =>{
+    console.log(result.split("w"))
+})
